@@ -108,7 +108,6 @@ body {
   opacity: 0;
   z-index: 0;
   transition: 0.5s;
-  padding-right: 40px;
   position: absolute;
 }
 

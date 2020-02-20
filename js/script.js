@@ -102,17 +102,14 @@ function generateTags() {
     /* get tags from data-tags attribute */
 
     const articleTags = article.getAttribute('data-tags');
-    console.log('tags to:' + articleTags);
 
     /* split tags into array */
 
     const articleTagsArray = articleTags.split(' ');
-    console.log(articleTagsArray);
 
     /* START LOOP: for each tag */
 
     for (let tag of articleTagsArray) {
-      console.log(tag);
 
       /* generate HTML of the link */
 
@@ -121,7 +118,6 @@ function generateTags() {
       /* add generated code to html variable */
 
       html = html + linkHTML;
-      console.log(html);
 
       /* END LOOP: for each tag */
     }
@@ -135,9 +131,6 @@ function generateTags() {
 }
 
 generateTags();
-
-
-
 
 
 
@@ -223,27 +216,17 @@ function generateAuthors() {
 
   const articles = document.querySelectorAll(optArticleSelector);
 
-  //dla kazdego art:
-
   for (let article of articles) {
-
-    //find wrapper
 
     const authorWrapper = article.querySelector(optArticleAuthorSelector);
 
-    //extraxt wartosc data-author
-
     const author = article.getAttribute('data-author');
-
-    //stworzyc pusty html
 
     let html = '';
 
     let linkHTML = '<a href="#author-' + author + '">' + author + '</a>';
 
     html = html + 'by ' + linkHTML;
-
-    //wrzucic go w html inner
 
     authorWrapper.innerHTML = html;
   }
