@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #551A8B;
+}
+
 body {
   background-image: url(https://i.postimg.cc/pr3XqDVn/blue-and-pink-paint-abstract-artwork-3109793.jpg);
   background-attachment: fixed;
@@ -43,6 +49,26 @@ body {
   text-transform: none;
   font-weight: 400;
   color: #777777;
+}
+
+.tag-size-1 {
+  font-size: 120%;
+}
+
+.tag-size-2 {
+  font-size: 140%;
+}
+
+.tag-size-3 {
+  font-size: 160%;
+}
+
+.tag-size-4 {
+  font-size: 180%;
+}
+
+.tag-size-5 {
+  font-size: 200%;
 }
 
 /* Layout */
@@ -100,6 +126,11 @@ body {
   display: inline-block;
 }
 
+.list.tags li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 /* Authors */
 .authors li {
   margin-bottom: 12px;
@@ -124,6 +155,10 @@ body {
 
 .post-author {
   font-style: italic;
+}
+
+.post-author .active {
+  font-weight: bold;
 }
 
 .post-tags {
