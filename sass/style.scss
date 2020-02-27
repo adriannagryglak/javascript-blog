@@ -75,8 +75,11 @@ body {
   background-color: beige;
   margin-right: 10px;
   margin-bottom: 80px;
-  padding: 40px;
   border-radius: 5px;
+}
+
+.sidebar{
+  padding: 40px;
 }
 
 
@@ -123,8 +126,11 @@ body {
   opacity: 0;
   z-index: 0;
   transition: 0.5s;
-  //padding-right: 40px;
+  padding: 40px;
   position: absolute;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
 
   &.active {
     opacity: 1;
