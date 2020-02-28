@@ -101,6 +101,10 @@ body {
   padding: 40px;
 }
 
+#postsListsTitle:hover {
+  cursor: pointer;
+}
+
 /* Logo */
 .logo {
   font-family: "Sacramento", cursive;
@@ -177,10 +181,12 @@ body {
         flex-direction: column;
     text-align: center;
   }
-  .sidebar {
-    width: 200px;
+  .sidebar,
+  .posts {
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
   }
   .post-tags {
     -ms-flex-pack: center;
