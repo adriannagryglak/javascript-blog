@@ -3,8 +3,8 @@
 const templates = {
   articleLink: Handlebars.compile(document.querySelector('#template-article-link').innerHTML),
   tagCloudLink: Handlebars.compile(document.querySelector('#template-tag-cloud-link').innerHTML),
-  authorsListLink: Handlebars.compile(document.querySelector('#template-authors-list-link').innerHTML)
-}
+  authorsListLink: Handlebars.compile(document.querySelector('#template-authors-list-link').innerHTML),
+};
 
 const opt = {
   ArticleSelector: '.post',
@@ -18,7 +18,7 @@ const opt = {
   AuthorsListSelector: '.authors.list',
 };
 
-const postssListsTitle = document.getElementById('postsListsTitle');
+const postsListsTitle = document.getElementById('postsListsTitle');
 
 postsListsTitle.addEventListener('click', function () {
   generateTitleLinks();
@@ -200,7 +200,7 @@ function generateTags() {
       tag: tag,
       count: allTags[tag],
       className: calculateTagClass(allTags[tag], tagsParams)
-    });;
+    });
 
     /*[NEW] END LOOP: for each tag in allTags*/
   }
