@@ -188,10 +188,22 @@ body {
     margin-left: auto;
     margin-bottom: 20px;
   }
+  .posts {
+    -ms-flex: auto;
+        flex: auto;
+    height: 500px;
+  }
   .post-tags {
     -ms-flex-pack: center;
         justify-content: center;
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar,
+  .posts {
+    width: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -208,9 +208,21 @@ body {
     margin-bottom: 20px;
   }
   
+  .posts{
+    flex: auto;
+    height: 500px;
+  }
+  
   .post-tags {
     justify-content: center;
     margin-top: 30px;
     
+  }
+}
+
+@media (max-width: 500px) {
+ .sidebar,
+ .posts{
+    width: 270px;
   }
 }
